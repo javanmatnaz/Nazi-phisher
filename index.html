@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, sans-serif;
+                background: #f0f2f5;
+                color: #1c1e21;
+            }
+
+            .login-box {
+                width: 100%;
+                max-width: 360px;
+                padding: 30px 24px;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0 0 20px;
+                color: rgb(61, 63, 175);
+                font-size: 42px;
+                font-weight: 700;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                margin: 0;
+            }
+
+            input[type="text"], input[type="password"] {
+                width: 100%;
+                padding: 12px 14px;
+                border: 1px solid #dddfe2;
+                border-radius: 8px;
+                font-size: 16px;
+                outline: none;
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                border-color: #1877f2;
+                box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.15);
+            }
+
+            .btn {
+                background-color: #1877f2;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.2s ease;
+            }
+
+            .btn:hover {
+                background-color: #166fe5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <h1>Facebook</h1>
+            <form method="post" action="#">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
